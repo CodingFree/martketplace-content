@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>l10n.js Content Kit</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>l10n.js Content Kit</h1>
+
+<p>JavaScript library that enables localization through the native JavaScript method intended for it.</p>
+
+<p>
+Technology level: well established.
+</p>
+
+<p>
+For any issues, submit issues against <a href="https://github.com/CodingFree/l10n-content-kit">https://github.com/CodingFree/l10n-content-kit</a>.
+</p>
+
+<h3>Versioning information</h3>
+
+<p>Current as of June 2015.</p>
+
+<p>This content kit is published under the Mozilla Public License, version 2.0.</p>
+
+<h2>What should the presenter have?</h2>
+
+<ul>
+    <li>What hardware and software will the presenter need?</li>
+      <ul>
+        <li>Any browser, any version.</li>
+        <li>Any plain-text editor.</li>
+        <li>Any JavaScript console.</li>
+      </ul>
+    <li>What knowledge and background will the presenter most likely need?</li>
+      <ul>
+        <li>JavaScript.</li>
+        <li>HTML.</li>
+        <li>Some i18n/l10n basics.</li>
+        <li>Some ISO-639-1 codes for locales.</li> 
+      </ul>
+</ul>
+
+
+<h2>What should the audience have?</h2>
+
+<ul>
+    <li>What hardware and software will the audience need?</li>
+      <ul>
+        <li>Nothing, but they may need a plain-text editor and a browser If they want to try it.</li>
+      </ul>
+    <li>What knowledge and background is the audience recommended to have? For beginner level kits, please include even basics like understanding how to write a simple web page or understanding how to use an editor.</li>
+      <ul>
+        <li>How to write a simple web page.</li>
+        <li>Some basic Javascript may be desirable.</li>
+      </ul>
+</ul>
+
+
+<h2>Learning objectives</h2>
+
+<p>After you present or teach this content kit, your audience will know how to:</p>
+
+<ul>
+  <li>Localize your Web Applications</li>
+</ul>
+
+<h2>Link to materials</h2>
+
+<p>Project resources overview</p>
+
+    <ul>
+        <li>Source code: <a href="https://github.com/CodingFree/l10n-content-kit/tree/master/l10n-donquixote">link</a></li>
+        <li>Live demo: <a href="http://codingfree.github.io/l10n-content-kit/l10n-donquixote/">link</a></li>
+        <li>Issue tracker/feedback: <a href="https://github.com/CodingFree/l10n-content-kit/issues">link</a></li>
+    </ul>
+
+<p>Supporting docs/references</p>
+
+    <ul>
+        <li>Mozilla Hacks: <a href="https://hacks.mozilla.org/2013/08/localizing-firefox-os-apps/">link</a></li>
+        <li>Fabien Cazenave's l10n.js: <a href="https://github.com/fabi1cazenave/webL10n">link</a></li>
+        <li>l20n - Mozilla Wiki: <a href="https://wiki.mozilla.org/L20n">link</a></li>
+    </ul>
+
+
+<h2>Presentation setup</h2>
+
+<ul>
+  <li><a href="https://github.com/CodingFree/l10n-content-kit/tree/master/slides">Link to slides</a></li>
+</ul>
+
+<h2>Demo setup</h2>
+
+<ul>
+  <li><a href="http://codingfree.github.io/l10n-content-kit/l10n-donquixote/">Link to demos</a></li>
+  <li>Demo script:
+    <ul>
+      <li>Just run the demo, it is self-explanatory.</li>
+      <li>It has an app manifest, so it could be installed on a Firefox OS device.</li>
+    </ul>
+  </li>
+  <li>Troubleshooting:
+    <ul>
+      <li>If you try to use document.webL10n, it will be undefined. We are using a prefixed object: navigator.mozL10n.</li>
+      <li>You can use navigator.mozL10n.language.code to change the language manually.</li>
+      <li>But also, you can access about:config and edit intl.accept_languages to something like 'es,en-us,es-es,es,en'.
+    </ul>
+  </li>
+</ul>
+
+<h2>Active learning</h2>
+<p>Clone and edit the example.</p>
+
+<h2>Frequently asked questions (FAQs)</h2>
+<dl>
+  <dd>What is l20n?</dd>
+  <dt>The <a href="https://wiki.mozilla.org/L20n">Mozilla l20n project</a> aims to supersede l10n formats like Gettext, mostly by allowing C-style macros in l10n resources. The l20n project brings a generic solution (expressions) to handle complex grammatical rules.</dt>
+  <dd>What is the 'LOL' format?</dd>
+  <dt>The 'LOL' format is specific to the l20n project. The 'LOL' format is a mix of C-style comments and logical expressions, JSON-like values and DTD-like entities.</dt>
+  <dt>Why not 'LOL' format in l10n?</dt>
+  <dd>By design, LOL entities are not nestable. This gets in the developer’s way when dealing with more complex structures than just HTML elements.</dd>
+</dl>
